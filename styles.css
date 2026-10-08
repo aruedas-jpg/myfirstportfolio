@@ -4,7 +4,6 @@
 brick red= #B72818
 blush pink= #FFEBE8
 mustard yellow= #ffc400
-tiffany blue= #D7F7E1
 */
 
 /* GLOBAL (base) MOBILE FIRST */
@@ -117,14 +116,40 @@ p {
 }
 
 aside {
-    
+    background-color: #ffc400;
+    color: #FFEBE8;
+    padding: 1rem;
+    padding: 1rem;
 }
 
 footer {
-
+    background-color: #FFEBE8;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
 /* MEDIA QUERY (MEDIUM ======) */
 @media screen and (min-width:800px) {
+    nav ul {
+        display:flex;
+        justify-content:space-evenly;
+        list-style:none;
+        align-items:center;
+    }
+
+.card-row {
+        display:flex;
+        gap:1rem;
+        flex-wrap:wrap;
+        background-color:#B72818;
+        padding:1rem;
+    }
+
+.card-row > section {
+        flex: 1 1 260px;
+        background-color:#FFEBE8;
+        padding:.5rem;
+    }
 
 }
