@@ -61,14 +61,13 @@ nav li {
     display: flex;
     padding: 1rem 1rem;
     margin: 1rem;
-    background-color: none;
     justify-content: center;
 }
 
 nav a {
     text-decoration:none;
     color: black;
-    font-size:1.5en;
+    font-size:1.5 en;
     text-transform:uppercase;
     text-align: center;
 }
