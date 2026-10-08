@@ -1,14 +1,17 @@
 /* CSS by Angela Ruedas */
 
 /* Color Palette
-brick red= #B72818
-blush pink= #FFEBE8
-mustard yellow= #ffc400
+grass green= #55BF0A
+pale green= #CEFFB4
+pale blue= #D9F0F6
+steel blue= #B4E0FF
+ripe orange= #F97116
+pale orange= #FFC081
 */
 
 /* GLOBAL (base) MOBILE FIRST */
 body {
-    background-color: #FFEBE8;
+    background-color: #D9F0F6;
     margin: 0;
     display: grid;
 }
@@ -22,7 +25,7 @@ body {
     flex: 1 1 0%;
     margin: 20px;
     padding: 15px;
-    border: 2px solid black;
+    border: 2px solid #55BF0A;
     border-radius: 10px;
 }
 
@@ -43,8 +46,8 @@ header p {
 nav {
     margin: 1rem;
     padding: 1rem;
-    border: 3px solid black;
-    background-color: #FFEBE8;
+    border: 3px solid #55BF0A;
+    background-color: #D9F0F6;
 }
 
 nav ul {
@@ -58,7 +61,7 @@ nav li {
     display: flex;
     padding: 1rem 1rem;
     margin: 1rem;
-    background-color: #FFEBE8;
+    background-color: none;
     justify-content: center;
 }
 
@@ -71,20 +74,20 @@ nav a {
 }
 
 nav a:hover {
-    color:#B72818;
+    color:#F97116;
 }
 
 .card-row {
     display:flex;
     gap:1rem;
     flex-wrap:wrap;
-    background-color:#B72818;
+    background-color:#FFEBA0;
     padding:1rem;
 }
 
 .card-row > section {
     flex: 1 1 260px;
-    background-color:#FFEBE8;
+    background-color:#FFEBA0;
     padding:.5rem;
 }
 
@@ -92,7 +95,7 @@ main {
     margin: .5rem;
     padding: .5rem;
     border: 1px black;
-    background-color: #FFEBE8;
+    background-color: #D9F0F6;
 }
 
 h1 {
@@ -116,14 +119,21 @@ p {
 }
 
 aside {
-    background-color: #ffc400;
-    color: #FFEBE8;
+    background-color: #FFEBA0;
+    color: #CEFFB4;
     padding: 1rem;
     padding: 1rem;
 }
 
+header, footer {
+  margin: .5rem;
+  padding: .5rem;
+  border: .5pc solid #55BF0A;
+  background: #D9F0F6;
+}
+
 footer {
-    background-color: #FFEBE8;
+    background-color: #D9F0F6;
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
@@ -131,6 +141,10 @@ footer {
 
 /* MEDIA QUERY (MEDIUM ======) */
 @media screen and (min-width:800px) {
+    body {
+        background-color:#B4E0FF;
+    }
+
     nav ul {
         display:flex;
         justify-content:space-evenly;
@@ -142,13 +156,13 @@ footer {
         display:flex;
         gap:1rem;
         flex-wrap:wrap;
-        background-color:#B72818;
+        background-color:#FFC081;
         padding:1rem;
     }
 
 .card-row > section {
         flex: 1 1 260px;
-        background-color:#FFEBE8;
+        background-color:#FFC081;
         padding:.5rem;
     }
 
